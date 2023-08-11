@@ -71,7 +71,7 @@ main {
   font-family: 'argaka';
   font-size: 12rem;
   margin: 0;
-  color: #f4fbfd;
+  color: $light-color;
   mix-blend-mode: color-dodge;
   @media screen and (max-width: 700px) {
     font-size: 9rem;
@@ -95,7 +95,7 @@ main {
   flex-direction: column;
 }
 .number-div {
-  color: #95e898;
+  color: #68c36c;
   // border: 1px solid $light-color;
   border-radius: 0;
   width: 80px;
