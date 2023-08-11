@@ -1,5 +1,5 @@
 $light-color: #f9f4f0;
-$dark-color: #191501;
+$dark-color: #041c1f;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -29,7 +29,7 @@ main {
     margin: 0;
     margin-bottom: 3rem;
     font-size: 2rem;
-    color: wheat;
+    color: #ffc863;
     mix-blend-mode: color-dodge;
   }
 }
@@ -71,7 +71,7 @@ main {
   font-family: 'argaka';
   font-size: 12rem;
   margin: 0;
-  color: #fff;
+  color: #f4fbfd;
   mix-blend-mode: color-dodge;
   @media screen and (max-width: 700px) {
     font-size: 9rem;
@@ -95,14 +95,15 @@ main {
   flex-direction: column;
 }
 .number-div {
-  color: $light-color;
-  border: 2px solid $light-color;
+  color: #95e898;
+  // border: 1px solid $light-color;
   border-radius: 0;
   width: 80px;
   padding: 12px 0;
   font-family: "Outfit", sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
+  mix-blend-mode: color-dodge;
 }
 .element-text {
   font-family: "Outfit", sans-serif;
