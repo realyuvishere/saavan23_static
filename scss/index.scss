@@ -1,3 +1,6 @@
+$light-color: #f9f4f0;
+$dark-color: #191501;
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
 
 @font-face {
@@ -19,13 +22,25 @@ main {
   min-height: 100vh;
   height: 100vh;
   max-height: 100%;
-  background-color: #f9f4f0;
-  p {
+  background-color: $dark-color;
+  p:first-child {
     font-family: 'Outfit';
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 3rem;
     font-size: 2rem;
+    color: wheat;
+    mix-blend-mode: color-dodge;
+  }
+}
+.dot-online {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: -30px;
+  color: #aaa;
+  @media screen and (max-width: 400px) {
+    margin-bottom: -10px;
   }
 }
 .dot {
@@ -44,17 +59,25 @@ main {
   position: fixed;
   right: 0;
   bottom: 0;
+  left: 0;
+  top: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: .09;
+  opacity: .1;
+  filter: sepia(1);
 }
 
 .main-title {
   font-family: 'argaka';
   font-size: 12rem;
   margin: 0;
+  color: #fff;
+  mix-blend-mode: color-dodge;
   @media screen and (max-width: 700px) {
     font-size: 9rem;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 5rem;
   }
   // text-align: center;
 }
@@ -72,8 +95,8 @@ main {
   flex-direction: column;
 }
 .number-div {
-  color: #012a2f;
-  border: 2px solid #012a2f;
+  color: $light-color;
+  border: 2px solid $light-color;
   border-radius: 0;
   width: 80px;
   padding: 12px 0;
@@ -85,7 +108,7 @@ main {
   font-family: "Outfit", sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #012a2f;
+  color: $light-color;
   text-transform: uppercase;
   padding-top: .5rem;
 }
